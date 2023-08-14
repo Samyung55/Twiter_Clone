@@ -1,3 +1,12 @@
+const express = require("express")
+const dotenv = require("dotenv")
+const mongoose = require("mongoose")
+const cookieParser = require("cookie-parser")
+
+const userRoutes = require("./routes/users.js")
+const authRoutes = require("./routes/auths.js")
+const tweetRoutes = require("./routes/tweets.js")
+
 
 const app = express();
 dotenv.config();
