@@ -18,3 +18,5 @@ const TweetSchema = new mongoose.Schema(
     },
     { timestamps: true }
 )
+
+export default mongoose.model("Tweet", TweetSchema);
